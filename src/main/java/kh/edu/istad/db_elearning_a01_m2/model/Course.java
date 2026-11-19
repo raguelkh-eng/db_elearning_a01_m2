@@ -6,7 +6,6 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.NoArgsConstructor;
 
-import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -42,8 +41,7 @@ public class Course {
 
     private String level;
 
-    @Column(precision = 38, scale = 2)
-    private BigDecimal price;
+    private double price;
 
     private String slug;
 
